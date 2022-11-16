@@ -1,0 +1,17 @@
+load data local infile  '~/databases/supplier2.data' 
+into table supplier 
+fields terminated by ' ' 
+lines terminated by '\n' 
+ignore 1 lines;
+        
+load data local infile  '~/databases/product2.data' 
+into table product 
+fields terminated by ' ' 
+lines terminated by '\n' 
+ignore 1 lines;
+
+load data local infile  '~/databases/supplierProduct2.data' 
+into table supplierProduct2
+fields terminated by '  ' 
+lines terminated by '\n' 
+ignore 1 lines;
